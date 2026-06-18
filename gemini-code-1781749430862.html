@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Arcade Website</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 { color: #00FF00; }
+        .game-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .game-card {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .game-card:hover {
+            border-color: #00FF00;
+            transform: scale(1.05);
+        }
+        .game-card h3 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Arcade!</h1>
+    <p>Select a game below to start playing:</p>
+
+    <div class="game-menu">
+        <a href="snake.html" class="game-card">
+            <h3>🐍 Snake</h3>
+            <p>Eat apples, grow bigger, don't crash!</p>
+        </a>
+
+        <a href="tictactoe.html" class="game-card">
+            <h3>❌ Tic-Tac-Toe ⭕</h3>
+            <p>Get three in a row to win.</p>
+        </a>
+    </div>
+
+</body>
+</html>
